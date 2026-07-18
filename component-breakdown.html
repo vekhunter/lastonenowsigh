@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Breakdown & Engineering Choices</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:400,700&display=swap" rel="stylesheet">
+    <style>
+        .unique-heading {
+            text-align: center;
+        }
+        .unique-heading button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+            padding: 0;
+        }
+        .unique-heading button:hover h1 {
+            opacity: 0.8;
+        }
+        .collapse-icon {
+            display: inline-block;
+            margin-right: 10px;
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+        .collapse-icon.collapsed {
+            transform: rotate(-90deg);
+        }
+    </style>
+<body>
+    <header>
+        <div class="logo-nav">
+            <img src="logo.svg" alt="Raw V Gaming Rig Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="component-breakdown.html" class="active">Component Breakdown</a></li>
+                    <li><a href="performance-temps.html">What Makes This Unique and What I Do to Protect You</a></li>
+                    <li><a href="site-plan.html">Site Plan</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="unique-heading">
+            <button onclick="toggleSection('breakdown-content')"><span class="collapse-icon">▼</span><h1 style="display: inline;">Component Breakdown & Engineering Choices</h1></button>
+        </div>
+        <section class="main-text" id="breakdown-content">
+            <ul class="component-list">
+                <li style="display:flex;align-items:center;gap:1rem;">
+                    <img src="images/gpu.png" alt="GPU" style="width:60px;height:60px;object-fit:cover;border-radius:8px;background:#222;box-shadow:0 2px 8px rgba(0,0,0,0.12);">
+                    <span><strong>GPU:</strong> We use GTX 970s—a great esports GPU. Our goal with this GPU and the setup is not to create a high settings rig but to create a smooth and cheap rig. The 970 reflects that, and it's stylish too. Although, if you want to play really demanding games, we recommend an RTX 3060.<br><br>
+                    <strong>Team Red Note:</strong> If you're on Team Red (AMD), get 8GB of VRAM with the RX 580 for the best experience.</span>
+                </li>
+                <li style="display:flex;align-items:center;gap:1rem;"><img src="images/asrock h110 pro btc+ .jpg" alt="ASRock H110 Pro BTC+" style="width:60px;height:60px;object-fit:cover;border-radius:8px;background:#222;box-shadow:0 2px 8px rgba(0,0,0,0.12);"> <span><strong>Motherboard:</strong> ASRock H110 Pro BTC+ — this component is originally designed for mining, but since mining has died there is no demand for it. It's not bad at all: it has a stable power setup and is designed to run 24/7, which is more than you will ever need.</span></li>
+                <li style="display:flex;align-items:center;gap:1rem;"><img src="images/corsair rmx.jpg" alt="Corsair RMx 850W" style="width:60px;height:60px;object-fit:cover;border-radius:8px;background:#222;box-shadow:0 2px 8px rgba(0,0,0,0.12);"> <span><strong>Power Supply:</strong> Corsair RMx 850W — one of the most reliable power supplies ever made. We never compromise on the PSU, which ensures stability and a stable system.</span></li>
+                <li style="display:flex;align-items:center;gap:1rem;"><img src="images/cooler master hyper 212.jpg" alt="Cooler Master Hyper 212" style="width:60px;height:60px;object-fit:cover;border-radius:8px;background:#222;box-shadow:0 2px 8px rgba(0,0,0,0.12);"> <span><strong>CPU Cooler:</strong> Hyper 212 + MX-4 — the Hyper 212 is a classic reliable cooler and is crazy cost effective for the rig. The same goes for Arctic MX-4 thermal paste: the thermal paste is high quality, can last for a year or longer, and helps keep our temps low.</span></li>
+                <li style="display:flex;align-items:center;gap:1rem;"><img src="images/6gpu mining frame.jpg" alt="6GPU Mining Frame" style="width:60px;height:60px;object-fit:cover;border-radius:8px;background:#222;box-shadow:0 2px 8px rgba(0,0,0,0.12);"> <span><strong>Frame:</strong> Mining frame — we use high quality mining frames that are open air, which helps keep temps low instead of being cramped in a box. This also makes it easier for you to build and trade out components, and if you ever need, install up to 6 GPUs.</span></li>
+                                <li style="display:flex;align-items:center;gap:1rem;">
+                                    <img src="images/intel m.2.jpg" alt="Intel M.2 SSD" style="width:60px;height:60px;object-fit:cover;border-radius:8px;background:#222;box-shadow:0 2px 8px rgba(0,0,0,0.12);">
+                                    <img src="images/crucial ssd.jpg" alt="Crucial SSD" style="width:60px;height:60px;object-fit:cover;border-radius:8px;background:#222;box-shadow:0 2px 8px rgba(0,0,0,0.12);">
+                                    <span><strong>Storage:</strong> We use an M.2 for the main OS and use SATA 2.5 inch SSDs for game storage, keeping it fast where it needs it but saving you money. We like using Crucial and Intel, ensuring reliability.</span>
+                                </li>
+                <li style="display:flex;align-items:center;gap:1rem;"><img src="images/artic f12.jpg" alt="Arctic F12 Fan" style="width:60px;height:60px;object-fit:cover;border-radius:8px;background:#222;box-shadow:0 2px 8px rgba(0,0,0,0.12);"> <span><strong>Fans:</strong> We use Arctic F12s for their incredible cost but also for their reliability. They last a very long time and are really good quality—we love them from Arctic. They draw very little power but push a lot of air.</span></li>
+            </ul>
+            <h2>No Corners Cut Philosophy</h2>
+            <p>When I build a rig, I build it well. That reflects in my choice of high-quality components, solid power, and airflow to make sure your system performs for years to come. I'm not just selling you a PC—I'm selling a vision.</p>
+        </section>
+        <div class="unique-heading">
+            <button onclick="toggleSection('position-content')"><span class="collapse-icon">▼</span><h1 style="display: inline;">Why I Am in a Strong Position to Build You a Good PC</h1></button>
+        </div>
+                <section class="main-text" id="position-content">
+                    <ul style="max-width:700px;margin:1.5rem auto 2.5rem auto;text-align:left;font-size:1.15rem;line-height:1.6;">
+                        <li>I have personally built 2 of these rigs now and wanted a balance between doing it myself and having the guidance I needed to succeed.</li>
+                        <li>I have done a lot on this rig including the website that's in front of you right now. The rig handles virtual machines fine.</li>
+                        <li>I am able to adapt to your needs unlike most prebuilt companies who can't.</li>
+                        <li>I also help install software, give advice on antiviruses, assist with setting up the PC, and help find peripherals at no extra cost.</li>
+                    </ul>
+                </section>
+        </section>
+
+        <section class="built-examples">
+            <h2>Built Examples</h2>
+            <div class="example-set">
+                <h3>Raw V16</h3>
+                <div class="examples-gallery">
+                    <div class="example">
+                        <img src="images/rig.jpg" alt="Raw V16 Example 1">
+                        <p>Raw V16: Main build overview</p>
+                    </div>
+                    <div class="example">
+                        <img src="images/raw v16 2.PNG" alt="Raw V16 Example 2">
+                        <p>Raw V16: Cable management and airflow</p>
+                    </div>
+                <div class="examples-gallery">
+                    <div class="example">
+                        <img src="images/rig.jpg" alt="Raw V8 Example 1">
+                        <p>Raw V8: Main build overview</p>
+                    </div>
+                    <div class="example">
+                        <img src="images/gpu for raw v8.PNG" alt="Raw V8 Example 2">
+                        <p>Raw V8: Airflow and cooling</p>
+                    </div>
+                    <div class="example">
+                        <img src="images/third raw v8.PNG" alt="Raw V8 Example 3">
+                        <p>Raw V8: Power and cable management</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="unique-footer">
+            <div class="unique-footer-content">
+                <a href="#" class="ebay-link">Buy on eBay (Coming Soon)</a>
+                <p>&copy; 2026 Raw V Gaming Rig</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleSection(id) {
+            const section = document.getElementById(id);
+            const button = section.previousElementSibling.querySelector('button');
+            const icon = button.querySelector('.collapse-icon');
+            
+            section.style.display = section.style.display === 'none' ? 'block' : 'none';
+            icon.classList.toggle('collapsed');
+        }
+    </script>
+</body>
+</html>
