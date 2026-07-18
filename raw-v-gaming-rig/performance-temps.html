@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Makes This Build and Process Unique</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:400,700&display=swap" rel="stylesheet">
+    <style>
+        .unique-heading {
+            text-align: center;
+        }
+        .unique-heading button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+            padding: 0;
+        }
+        .unique-heading button:hover h1 {
+            opacity: 0.8;
+        }
+        .collapse-icon {
+            display: inline-block;
+            margin-right: 10px;
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+        .collapse-icon.collapsed {
+            transform: rotate(-90deg);
+        }
+    </style>
+<body>
+    <header>
+        <div class="logo-nav">
+            <img src="logo.svg" alt="Raw V Gaming Rig Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="component-breakdown.html">Component Breakdown</a></li>
+                    <li><a href="performance-temps.html" class="active">What Makes This Unique</a></li>
+                    <li><a href="site-plan.html">Site Plan</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="unique-heading">
+            <button onclick="toggleSection('unique-content')"><span class="collapse-icon">▼</span><h1 style="display: inline;">What Makes This Build and Process Unique</h1></button>
+        </div>
+        <section class="main-text" id="unique-content">
+            <p style="text-align: center; max-width: 600px; margin: 1.5rem auto;">This build is designed with a focus on long-term stability, quality airflow, and reliable components. Every part is chosen for its proven performance and value, ensuring you get a system that is dependable for daily use, gaming, and multitasking. The open-air design, careful part selection, and attention to detail make this rig unique—no overheating, no instability, just a smooth and reliable experience.</p>
+        </section>
+
+        <div class="unique-heading">
+            <button onclick="toggleSection('airflow-content')"><span class="collapse-icon">▼</span><h1 style="display: inline;">How the Rig's Airflow Works</h1></button>
+        </div>
+            <section class="main-text" id="airflow-content">
+                <p style="text-align: center; max-width: 600px; margin: 1.5rem auto;">The rig's airflow is simple but extremely effective. The five F12 fans blow across the GPU like a wave, and the Hyper 212 cooler blows in that same direction, keeping airflow straightforward and efficient. The open frame also helps naturally dissipate heat, along with the GPU and PSU fans working together to keep everything cool.</p>
+            </section>
+    </main>
+    <footer>
+        <div class="unique-footer" style="margin-bottom: 3.5rem;">
+            <div class="unique-footer-content">
+                <a href="#" class="ebay-link">Buy on eBay (Coming Soon)</a>
+                <p>&copy; 2026 Raw V Gaming Rig</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleSection(id) {
+            const section = document.getElementById(id);
+            const button = section.previousElementSibling.querySelector('button');
+            const icon = button.querySelector('.collapse-icon');
+            
+            section.style.display = section.style.display === 'none' ? 'block' : 'none';
+            icon.classList.toggle('collapsed');
+        }
+    </script>
+            
+            section.style.display = section.style.display === 'none' ? 'block' : 'none';
+            icon.classList.toggle('collapsed');
+        }
+    </script>
+</body>
+</html>
